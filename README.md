@@ -8,9 +8,9 @@ What makes this repository interesting is not just the playbook itself, but **ho
 by a small **fleet of GitHub Copilot primitives** (custom agents, skills, instruction files, and a
 driver prompt) that collaborate under an orchestrator in a wave-based pipeline.
 
+> 💡 **Inspired by [*The Agentic SDLC Handbook* by Daniel Meppiel](https://danielmeppiel.github.io/agentic-sdlc-handbook/handbook/ch01-the-agentic-sdlc-thesis.html)** — in particular its [case study on agentic handbook writing](https://danielmeppiel.github.io/agentic-sdlc-handbook/case-study-handbook-writing.html). This project applies that thesis: composing **primitives** (agents + prompts + skills + instructions) into a squad that produces real software artifacts.
+
 > 📖 **Read the playbook live:** <https://valentina-alto.github.io/microsoft-agent-framework-playbook-fleets-generated/>
->
-> *(Published via GitHub Pages from the [`gh-pages`](https://github.com/Valentina-Alto/microsoft-agent-framework-playbook-fleets-generated/tree/gh-pages) branch, which mirrors the [`site/`](site/) folder. To refresh it after editing `site/`, run `git subtree split --prefix site -b gh-pages` and force-push the branch.)*
 
 ---
 
@@ -192,6 +192,14 @@ Theory → library → operations → hosting:
 8. Streaming, checkpointing & human-in-the-loop
 9. Middleware & observability
 10. Declarative agents, hosting & DevUI
+
+---
+
+## Credits & inspiration
+
+This repository is a direct application of **[*The Agentic SDLC Handbook* by Daniel Meppiel](https://danielmeppiel.github.io/agentic-sdlc-handbook/handbook/ch01-the-agentic-sdlc-thesis.html)** — the primary source of inspiration for the approach used here. The handbook's [case study on writing a handbook with agents](https://danielmeppiel.github.io/agentic-sdlc-handbook/case-study-handbook-writing.html) directly motivated the "fleet of primitives" model: encoding distinct roles as agents, prompts, skills, and instruction files, and orchestrating them in waves to produce verified artifacts.
+
+The playbook content itself is grounded in the official **[Microsoft Agent Framework documentation](https://learn.microsoft.com/agent-framework/)** and the installed `agent-framework` Python package.
 
 ---
 
