@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Add safe, well-scoped tools so an agent can act beyond text generation.">
+  <title>Tools and function calling | Microsoft Agent Framework Playbook</title>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script defer src="../assets/app.js"></script>
+</head>
+<body class="chapter-page">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <button class="sidebar-toggle" type="button" aria-controls="chapter-sidebar" aria-expanded="false">☰ Chapters</button>
+
+  <div class="page-shell">
+    <aside id="chapter-sidebar" class="sidebar" aria-label="Playbook chapters">
+      <div class="sidebar-inner">
+        <a class="site-title" href="../index.html">Microsoft Agent Framework Playbook</a>
+        <nav class="chapter-nav" aria-label="Chapter navigation">
+          <ol>
+          <li><a href="what-is-an-agent.html"><span class="chapter-number">01</span><span>What is an agent?</span></a></li>
+          <li><a href="agentic-patterns-and-maf-map.html"><span class="chapter-number">02</span><span>Agentic patterns and the MAF map</span></a></li>
+          <li><a href="agents-and-instructions.html"><span class="chapter-number">03</span><span>Agents and instructions</span></a></li>
+          <li><a href="chat-clients-messages-and-conversations.html"><span class="chapter-number">04</span><span>Chat clients, messages, and conversations</span></a></li>
+          <li><a class="is-current" aria-current="page" href="tools-and-function-calling.html"><span class="chapter-number">05</span><span>Tools and function calling</span></a></li>
+          <li><a href="workflows-sequential-and-concurrent.html"><span class="chapter-number">06</span><span>Workflows for sequential and concurrent orchestration</span></a></li>
+          <li><a href="handoff-and-group-chat.html"><span class="chapter-number">07</span><span>Handoff and group chat orchestration</span></a></li>
+          <li><a href="streaming-checkpointing-and-human-in-the-loop.html"><span class="chapter-number">08</span><span>Streaming, checkpointing, and human-in-the-loop</span></a></li>
+          <li><a href="middleware-and-observability.html"><span class="chapter-number">09</span><span>Middleware and observability</span></a></li>
+          <li><a href="declarative-hosting-and-devui.html"><span class="chapter-number">10</span><span>Declarative agents, hosting, and DevUI</span></a></li>
+          </ol>
+        </nav>
+      </div>
+    </aside>
+
+    <div class="content-shell">
+      <header class="chapter-header">
+        <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../index.html">Home</a> / Chapter 5</nav>
+        <p class="eyebrow">Chapter 5</p>
+        <h1>Tools and function calling</h1>
+        <p class="lead">Add safe, well-scoped tools so an agent can act beyond text generation.</p>
+      </header>
+
+      <main id="main-content" class="chapter-main" tabindex="-1">
+        <div class="chapter-meta">
+          <nav class="metadata-card" aria-labelledby="section-nav-heading">
+            <h2 id="section-nav-heading">On this page</h2>
+            <ol>
+              <li><a href="#objective">Objective</a></li>
+              <li><a href="#concept-theory">Concept/Theory</a></li>
+              <li><a href="#in-maf">In MAF</a></li>
+              <li><a href="#when-to-use-pitfalls">When to use / pitfalls</a></li>
+              <li><a href="#worked-example">Worked example</a></li>
+              <li><a href="#recap-and-next">Recap &amp; next</a></li>
+            </ol>
+          </nav>
+          <aside class="metadata-card" aria-labelledby="components-heading">
+            <h2 id="components-heading">MAF components</h2>
+            <ul class="tag-list">
+            <li>tools</li>
+            <li>function calling</li>
+            <li>tool schemas</li>
+            <li>agent skills</li>
+            </ul>
+          </aside>
+          <aside class="metadata-card" aria-labelledby="depends-heading">
+            <h2 id="depends-heading">Prerequisites</h2>
+            <ul>
+            <li><a href="agentic-patterns-and-maf-map.html">Chapter 2: Agentic patterns and the MAF map</a></li>
+            <li><a href="agents-and-instructions.html">Chapter 3: Agents and instructions</a></li>
+            <li><a href="chat-clients-messages-and-conversations.html">Chapter 4: Chat clients, messages, and conversations</a></li>
+            </ul>
+          </aside>
+        </div>
+
+        <section class="chapter-section" data-section="objective">
+          <h2 id="objective"><a class="anchor-link" href="#objective" aria-label="Link to Objective section">Objective</a></h2>
+          <div class="section-content" data-content-slot="objective">
+            <p class="pending-note"><strong>Content pending.</strong> This section is reserved for the chapter author. Add authored content inside this <code>.section-content</code> block.</p>
+          </div>
+        </section>
+        <section class="chapter-section" data-section="concept-theory">
+          <h2 id="concept-theory"><a class="anchor-link" href="#concept-theory" aria-label="Link to Concept/Theory section">Concept/Theory</a></h2>
+          <div class="section-content" data-content-slot="concept-theory">
+            <p class="pending-note"><strong>Content pending.</strong> This section is reserved for the chapter author. Add authored content inside this <code>.section-content</code> block.</p>
+          </div>
+        </section>
+        <section class="chapter-section" data-section="in-maf">
+          <h2 id="in-maf"><a class="anchor-link" href="#in-maf" aria-label="Link to In MAF section">In MAF</a></h2>
+          <div class="section-content" data-content-slot="in-maf">
+            <p class="pending-note"><strong>Content pending.</strong> This section is reserved for the chapter author. Add authored content inside this <code>.section-content</code> block.</p>
+          </div>
+        </section>
+        <section class="chapter-section" data-section="when-to-use-pitfalls">
+          <h2 id="when-to-use-pitfalls"><a class="anchor-link" href="#when-to-use-pitfalls" aria-label="Link to When to use / pitfalls section">When to use / pitfalls</a></h2>
+          <div class="section-content" data-content-slot="when-to-use-pitfalls">
+            <p class="pending-note"><strong>Content pending.</strong> This section is reserved for the chapter author. Add authored content inside this <code>.section-content</code> block.</p>
+          </div>
+        </section>
+        <section class="chapter-section" data-section="worked-example">
+          <h2 id="worked-example"><a class="anchor-link" href="#worked-example" aria-label="Link to Worked example section">Worked example</a></h2>
+          <div class="section-content" data-content-slot="worked-example">
+            <p class="pending-note"><strong>Content pending.</strong> This section is reserved for the chapter author. Add authored content inside this <code>.section-content</code> block.</p>
+          </div>
+        </section>
+        <section class="chapter-section" data-section="recap-and-next">
+          <h2 id="recap-and-next"><a class="anchor-link" href="#recap-and-next" aria-label="Link to Recap &amp; next section">Recap &amp; next</a></h2>
+          <div class="section-content" data-content-slot="recap-and-next">
+            <p class="pending-note"><strong>Content pending.</strong> This section is reserved for the chapter author. Add authored content inside this <code>.section-content</code> block.</p>
+          </div>
+        </section>
+
+        <nav class="pager" aria-label="Chapter pagination">
+          <a class="pager-link" rel="prev" href="chat-clients-messages-and-conversations.html">← Chapter 4: Chat clients, messages, and conversations</a>
+          <a class="pager-link" rel="next" href="workflows-sequential-and-concurrent.html">Chapter 6: Workflows for sequential and concurrent orchestration →</a>
+        </nav>
+      </main>
+
+      <footer class="site-footer chapter-footer">
+        <p>Generated from <code>content/toc.yml</code>. Replace only section content blocks when authoring.</p>
+      </footer>
+    </div>
+  </div>
+</body>
+</html>
